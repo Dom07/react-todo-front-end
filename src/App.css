@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  width: 30%;
+  margin: 10% auto;
+  color: #434e52;
 }
 
 .App-logo {
@@ -7,10 +9,36 @@
   pointer-events: none;
 }
 
+.InputDiv{
+  background-color: #434e52;
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 1px 2px 3px #cccccc;
+}
+
+.InputText{
+  padding: 7px;
+}
+
+.AddButton{
+  background-color: #ecce6d;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #ecce6d;
+  cursor: pointer;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.inputDiv{
+  display: inline;
 }
 
 .App-header {
