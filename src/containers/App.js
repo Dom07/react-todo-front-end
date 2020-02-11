@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Task from './Task/Task';
+import Tasks from '../components/Tasks/Tasks';
+import InputBox from '../components/InputBox/InputBox';
 import './App.css';
 
 class App extends Component {
@@ -52,27 +53,28 @@ class App extends Component {
 
   render(){
     let task = null;
-    task = this.state.tasks.map((elem, index) =>{
-      return <Task
-      key={elem.id}
-      name={elem.name}
-      delete={()=> this.deleteTask(index)}
-      mark={()=>this.markTask(elem.id)}
-      status={elem.status}/>
-    })
+    task = (
+      <Tasks
+        tasks = {this.state.tasks}
+        delete = {this.deleteTask}
+        mark = {this.markTask}
+      />
+    )
 
     return (
       <div className="App">
         <h1 style={{textAlign: "center"}}> Todo App</h1>
-        {task}
-        <div className="InputDiv">
-          <input 
-            className="InputText" 
-            type="text" hint="Enter task here:" 
-            value={this.state.currValue}
-            onChange={(event) => this.inputChange(event)}/>
-          <button className="AddButton" onClick={this.addTask}>New Task</button>
-        </div>
+
+        {/* Renders a list of task */}
+        {task} 
+
+        {/* Task Input Component */}
+        <InputBox
+          status = {this.state.currValue}
+          onChange = {this.inputChange}
+          addTask = {this.addTask}
+        />
+
       </div>
     );
   }

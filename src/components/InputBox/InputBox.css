@@ -1,0 +1,28 @@
+.InputDiv{
+background-color: #434e52;
+margin-top: 10px;
+border: 1px solid #cccccc;
+text-align: center;
+padding: 15px;
+box-shadow: 1px 2px 3px #cccccc;
+}
+
+.InputText{
+padding: 7px;
+}
+
+.AddButton{
+background-color: #ecce6d;
+display: inline-block;
+padding: 8px;
+border: 1px solid #ecce6d;
+cursor: pointer;
+}
+
+.AddButton:hover{
+background-color: #dbbf63;
+}
+
+.inputDiv{
+display: inline;
+}
