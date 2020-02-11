@@ -1,32 +1,32 @@
 .Task{
     text-align: center;
-    display: block;
-    border: 1px solid #cccccc;
     box-shadow: 1px 2px 3px #cccccc;
-    background-color: #5b8c85;
-    margin: 1px auto;
+    margin: 3px auto;
     cursor: pointer;
 }
 
-.Task:hover{
+.TaskDiv:hover{
     background-color: #678a74;
 }
 
-.Task p{
+.TaskDiv p{
     display: inline-block;
     color: white;;
 }
 
 .TaskDiv{
+    background-color: #5b8c85;
     display: inline-block;
     width: 80%;
 }
 
-.Task button{
-    float:right;
-    font-size: large;
-    padding: 15px;
+.ButtonDiv{
     background-color: #ecce6d;
-    border: 1px solid #ecce6d;
-    cursor: pointer;
+    display: inline-block;
+    width: 20%;
+    color: black;
+}
+
+.ButtonDiv:hover{
+    background-color: #dbbf63;
 }

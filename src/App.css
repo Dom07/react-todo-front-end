@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.AddButton:hover{
+  background-color: #dbbf63;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

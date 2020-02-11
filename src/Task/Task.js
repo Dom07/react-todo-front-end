@@ -20,7 +20,9 @@ const task = (props)=>{
             <div className="TaskDiv" onClick={props.mark} >
                 <p style={pStyle}>{props.name}</p>
             </div>
-            <button onClick={props.delete}>Delete</button>
+            <div className="ButtonDiv" onClick={props.delete}>
+                <p>Delete</p>
+            </div>
         </div>
     );
 }
