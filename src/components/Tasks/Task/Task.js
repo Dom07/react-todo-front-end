@@ -12,15 +12,14 @@ const task = (props)=>{
         taskStyle = {
             opacity: "0.5"
         }
-
     }
 
     return(
         <div className="Task" style={taskStyle} >
-            <div className="TaskDiv" onClick={props.mark} >
+            <div className="TaskDiv" onClick={() => props.clickTask(props.id)} >
                 <p style={pStyle}>{props.name}</p>
             </div>
-            <div className="ButtonDiv" onClick={props.delete}>
+            <div className="ButtonDiv" onClick={() => props.clickDelete(props.id)}>
                 <p>Delete</p>
             </div>
         </div>
